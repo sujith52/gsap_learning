@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSAP x,y,scale, roatation animations learning at 17-04-2026 at 9:37pm</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<div class="box"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="finalboss"></div>
+<style>
+    
+    .box, .box2, .box3, .finalboss{
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+</style>
+<script>
+    // gsap.to(".box",{x: 200, y: 100, duration : 3, ease : "power2.out"})
+    // gsap.to(".box2", {scale : 0.5, duration : 3, ease: "power1.out"})
+    // gsap.to(".box3",{rotation : 360, duration: 3})
+    // gsap.to(".finalboss",{x:300, rotation : 360, scale : 2.5, duration : 5, ease: "power1.out"})
+
+    gsap.to(".box",{x:200, y:100, duration:3, ease:"power2.out"})
+
+gsap.to(".box2",{scale:1.3, duration:3, ease:"power2.out"})
+
+gsap.to(".box3",{rotation:360, duration:3, ease:"power2.out"})
+
+gsap.from(".finalboss",{
+    x:-200,
+    rotation:-360,
+    scale:0,
+    duration:5,
+    ease:"power2.out"
+})
+</script>
+
+</body>
+</html>

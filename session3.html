@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSAP duration, delay, ease animations learning at 17-04-2026 at 9:13pm</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<div class="box"></div>
+<div class="nbox"> <h1>Sujith</h1></div>
+<div class="mbox"> <h1>Kumar</h1></div>
+<style>
+    .box, .nbox, .mbox {
+        width: 200px;
+        height: 200px;
+        background: black;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: whitesmoke;
+    }
+</style>
+<script>
+    // gsap.to(".box",{x:400 , duration : 2,ease : "power1.out"})
+    // gsap.to(".nbox",{y: -270, x : 0 , duration : 1,delay : 0.5,ease : "elastic.out(1,0.3)"})
+    // gsap.to(".mbox", {x : 210, y : -460,duration : 2, delay : 0.5,  ease : "bounce.out"})
+  gsap.to(".box",{x:600, opacity:0, scale:0.5, duration:2})
+
+gsap.to(".nbox",{
+    y:-270,
+    duration:1,
+    delay:0.5,
+    ease:"elastic.out(1,0.3)"
+})
+
+gsap.to(".mbox",{
+    x:210,
+    y:-460,
+    duration:2,
+    delay:1.2,   // changed
+    ease:"bounce.out"
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSAP Start</title>
+  
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<button  onclick="add()">Click me bro</button>
+<div class="box"></div>
+<div class="ndbox"></div>
+
+<style>
+    .box{
+        width: 200px;
+        height: 300px;
+        border-radius: 45px;
+        background: red;
+    }
+    .ndbox{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: green;
+        border-color: black;
+    }
+</style>
+<script>
+   function add(){
+   gsap.to(".box",{x:200, duration:1, ease:"bounce.out"})
+    gsap.to(".ndbox",{y:300, duration:4, ease:"bounce.out"})
+        
+   }
+</script>
+
+</body>
+</html>

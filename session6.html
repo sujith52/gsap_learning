@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSAP duration, delay, ease animations learning at 17-04-2026 at 9:13pm</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+
+<button onclick="play()">play</button>
+<button onclick="pause()">pause</button>
+<button onclick="revrse()">Reverse</button>
+<button onclick="restart()">restart</button>
+<div class="box"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<style>
+
+div{
+  width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 20%;
+}
+
+</style>
+<script>
+let tl = gsap.timeline({paused : true})
+tl.to ([".box",".box2", ".box3"], {x : 200, duration : 2, ease : "power2.out",repeat : -1, yoyo : true})
+function play(){
+  tl.play()
+}
+function pause(){
+  tl.pause()
+}
+function revrse(){
+  tl.reverse()
+}
+function restart(){
+  tl.restart()
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSAP duration, delay, ease animations learning at 17-04-2026 at 9:13pm</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<div class="box"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<style>
+
+div{
+  width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 20%;
+}
+
+</style>
+<script>
+// let tl = gsap.timeline()
+
+// tl.to(".box1",{x:200, duration : 2})
+//   .to(".box1", {y : 150, duration : 2})
+//   .from(".box1", {x : -200, ease : "bounce.out", duration : 3})
+
+// let tl = gsap.timeline();
+
+// tl.to(".box",{x:200, duration:1, ease : "power2.out"})
+//   .to(".box2",{x:200, duration:1, y : -200}, "+=0.5")
+//   .to(".box3",{ x : 200, y : -400 , duration:1, rotation : 360}, "-=0.2")
+  
+
+let tl = gsap.timeline();
+
+tl.from(".box",{
+    x:-200,
+    opacity:0,
+    duration:1,
+    ease:"power2.out"
+})
+.to(".box",{rotation:360, duration:1})
+
+.from(".box2",{
+    x:-200,
+    opacity:0,
+    duration:1,
+    ease:"power2.out"
+}, "+=0.5")
+
+.from(".box3",{
+    x:-200,
+    opacity:0,
+    duration:1,
+    ease:"power2.out"
+}, "<")   // starts with box2
+
+.to([".box",".box2",".box3"],{
+    rotation:360,
+    duration:1, scale : 1.6
+});
+</script>
+</body>
+</html>
