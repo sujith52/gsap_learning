@@ -1,0 +1,136 @@
+*{
+        padding: 0;
+        margin: 0;
+}
+.large{
+        height: 100vh;
+        border: 1px solid #C3CFE2;
+}
+
+.hero{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  
+}
+
+.hero span{
+    background-color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 90px;
+
+}
+.hero h2{
+    letter-spacing: 10px;
+    
+}
+.hero hr{
+    background-color:#A18CD1 ;
+    width: 100%;
+    height: 5px;
+    border: none;
+    filter: blur(4px);
+    margin-top: 25px;
+}
+
+.hero h4{
+    align-items: center;
+    font-size: 50px;
+    margin-top: -150px;
+    margin-bottom: 15px;
+
+}
+.hero h3{
+    color: red;
+    
+}
+.scroll{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.image {
+    background-image: url('https://tse3.mm.bing.net/th/id/OIP.HFufYCJycMKCuEzX-823PgHaDl?rs=1&pid=ImgDetMain&o=7&rm=3');
+  
+   border-radius: 25px;
+   border: none;
+   box-shadow: 2px;
+   margin: 10vh;
+   width: 300px;  /* Or whatever size you need */
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.pinned{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 10vh;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+.hola{
+    margin-left: 25px;
+    
+}
+.textanim{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    gap: 20px;
+}
+.textanim h2{
+    margin-top: 20px;
+}
+.timeline{
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    
+}
+
+.box , .box1 ,.box2, .box3 {
+    height: 100px;
+    margin: 20px;
+    width: 100px;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.hig2{
+    background-image: url('https://images3.alphacoders.com/602/602307.jpg');
+    background-size: contain;
+}
+
+.hig3{
+    background-image: url('https://tse4.mm.bing.net/th/id/OIP.As4UuFZWjxHsVFD70VJCwgHaEK?w=960&h=540&rs=1&pid=ImgDetMain&o=7&rm=3');
+
+}
+
+.box{
+    background-image: url('https://www.scrolldroll.com/wp-content/uploads/2017/08/Fight-Club-Quotes-2-1024x683.jpg');
+    background-size: cover;
+}
+.box1{
+    background-image: url('https://th.bing.com/th/id/R.5e93c672edcbbc8ddb6432f46babef75?rik=NLxRn8aHzADJvg&riu=http%3a%2f%2fwww.scrolldroll.com%2fwp-content%2fuploads%2f2017%2f08%2fFight-Club-Quotes-10.jpg&ehk=miN%2f1KGtnxkmFi6OBTiDGgX0HG0GIfIYXEHQuTzZE2E%3d&risl=&pid=ImgRaw&r=0');
+    background-size: contain;
+}
+.box2{
+    background-image: url('https://wp.scoopwhoop.com/wp-content/uploads/2016/08/57a4970e6e510a13a63456ee_522217991.png');
+    background-size: contain;
+}
+.box3{
+    background-image: url('https://i.pinimg.com/736x/38/5d/15/385d154bfd63c03d3f3de7fdaa92440e.jpg');
+    background-size: contain;
+}

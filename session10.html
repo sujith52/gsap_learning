@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSAP Final UI project of the end of the chat gpt final project!</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="session10.css">
+<!-- Must include:
+Hero text animation (like you did)
+ScrollTrigger section
+One pinned section
+One SVG or text animation
+Timeline-based sequence -->
+
+<div class="hero large">
+    <h4><blockquote><i>It's only after we've lost everything that we're free to do anything.</i></blockquote></h4>
+    <h3><i>- Tyler Duren</i></h3>
+    <h1 class="names">
+        <span>S</span>
+        <span>U</span>
+        <span>J</span>
+        <span>I</span>
+        <span>T</span>
+        <span>H</span>
+    </h1>
+    <h2>KUMAR</h2>
+    <hr>
+</div>
+<div class="scroll large">
+    <div class="image"></div>
+    <div class="image hig2"></div>
+    <div class="image hig3"></div>
+</div>
+<div class="pinned large">
+    <h1 class="hola">Hello People !</h1>
+</div>
+<div class="textanim large">
+    <h1><i>When the world is burning My stomach is churning !</i></h1>
+    <h2><i>- Sujith Kumar</i></h2>
+</div>
+<div class="timeline large">
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</div>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from([".hero h4", " h3"],{x : -400, duration : 1.5, ease: "power2.out",opacity : 0 , scale : 1.5})
+    gsap.from("  span", {y : 50, duration :3, opacity : 0, ease: "power2.out", stagger : 0.2, scale : 1.1})
+
+
+    gsap.to(".scroll > *", {
+        x: 10, 
+        scale: 1.1, 
+        ease: "power2.out",
+        rotation : 90,
+        scrollTrigger: {
+            trigger: ".scroll", 
+            start: "top 80%",
+            scrub: true,
+          
+        }
+    });
+
+
+
+gsap.to(".hola",{x : 300,scale: 1.2, duration: 0.6, ease : "power2.out",scrollTrigger : {
+    trigger : ".hola",
+    start : "top 80%",
+    scrub : true,
+}})
+
+gsap.to([".textanim h1", ".textanim h2"],{
+    opacity: 1,
+    y: 0,
+    scale: 2.0,
+    duration: 2,
+    ease : "power1.out",
+    stagger : 0.3,
+    scrollTrigger : {
+        trigger: ".textanim",
+        start : "top 80%",
+        scrub : true
+    }
+})
+
+gsap.to(".timeline > *",{
+    y : 20,
+    scale:2.5,
+    duration : 2,
+    rotation : 55,
+    ease: "power2.out",
+    scrollTrigger :{
+        trigger : ".timeline",
+        start : "top 80%",
+        
+        scrub : true
+    }
+})
+</script>
+</body>
+</html>

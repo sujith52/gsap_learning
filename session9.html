@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GSAP text and svg animations, which looks like premium UI</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- <h1>
+    <span>S</span>
+    <span>U</span>
+    <span>J</span>
+    <span>I</span>
+    <span>T</span>
+    <span>H</span>
+</h1>
+<style>
+h1{
+    background-color: gray;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    padding : 20px;
+    border-radius: 25px;
+    font-family: monospace;
+    font-size: 50px;
+}
+span{
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+</style>
+<script>
+
+gsap.from("h1 span",{y : 50, opacity : 0, duration : 5,
+     ease: "power2.out", stagger: 0.1, scale : 1.1 })
+
+
+</script> -->
+<!-- well i did some practice on the text scroll effect  -->
+
+
+<!-- <h1 class="words">Words from the heart</h1>
+<svg width="600" height="300" viewBox ="0 0 200 100">
+  <path d="M10 100 Q 100 10 190 100" stroke="green" fill="transparent"/>
+</svg>
+<style>
+    .words{
+        color: gray;
+    }
+</style>
+<script>
+gsap.from(".words",{y : 50, opacity : 0, stagger : 0.3, duration : 3} )
+gsap.from("path",{strokeDasharray : 900,
+    strokeDashoffset : 300,
+    duration : 2
+})
+gsap.to("svg",{rotate : 360, duration : 2})
+</script> -->
+<!-- second challenge on the words  -->
+<h1 class="main">G Sujith Kumar</h1>
+<h1 class="split">
+    <span>S</span>
+    <span>U</span>
+    <span>J</span>
+    <span>I</span>
+    <span>T</span>
+    <span>H</span>
+</h1>
+<svg width="600" height="300" viewBox ="0 0 200 100">
+  <path d="M10 100 Q 100 10 190 100" stroke="green" fill="transparent"/>
+</svg>
+
+<style>
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+color: gray;
+}
+.split{
+    display: flex;
+    gap: 10px;
+    background-color: grey;
+    padding: 10px;
+}
+</style>
+<script>
+gsap.from (".main", {y : -50, opacity : 0, stagger: 0.6, ease : "power2.out", duration : 3})
+gsap.from("h1 span",{y : 50, opacity : 0, duration : 3, ease : "power2.out", stagger : 0.1, scale : 1.1})
+gsap.from ("path",{strokeDasharray : 400, strokeDashoffset : 300, duration: 5})
+
+// let tl = gsap.timeline();
+
+// tl.from(".main", {
+//   y: -50,
+//   opacity: 0,
+//   duration: 1,
+//   ease: "power2.out"
+// })
+// .from(".split span", {
+//   y: 50,
+//   opacity: 0,
+//   stagger: 0.1,
+//   duration: 1,
+//   ease: "power2.out"
+// }, "-=0.3")
+// .from("path", {
+//   strokeDasharray: 400,
+//   strokeDashoffset: 400,
+//   duration: 2,
+//   ease: "power2.out"
+// })
+// .to("svg", {
+//   rotation: 360,
+//   duration: 1.5,
+//   ease: "power2.out"
+// }, "-=1");
+
+</script>
+<!-- this was amazing  -->
+
+
+</body>
+</html>
